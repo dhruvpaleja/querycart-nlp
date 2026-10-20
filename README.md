@@ -50,6 +50,8 @@ Examples:
 
 Anchored grammar patterns require the whole sentence to match. This prevents silently ignoring a second condition such as “or stock above 50”. Unknown categories, reversed ranges, invalid CSV rows and data-changing requests produce visible errors.
 
+Name searches accept literal text. A phrase that resembles an extra numeric condition is rejected unless the entire name is quoted, for example `Find products named "coffee under 500"`. This avoids treating a requested filter as part of a product name.
+
 ## Course concepts
 
 CO1: language understanding and an NLP pipeline.  
@@ -69,7 +71,9 @@ The evaluation measures intended grammar behavior on project fixtures. It is not
 
 Only the documented English grammar is supported. No forecasts, sales history, dates, supplier selection, write queries, general joins or arbitrary natural-language questions. Unknown currency conversion is never performed. Unicode normalization helps matching but does not translate categories.
 
-The SQL preview is educational; it is not a database execution receipt. CSV results are read-only and the original data is not changed. Price arithmetic uses integer cents for totals; averages are rounded to two decimal places.
+The SQL preview is educational; it is not a database execution receipt. CSV results are read-only and the original data is not changed. Price arithmetic uses integer cents for totals; averages are rounded to two decimal places. A total that exceeds JavaScript's exact integer-cent limit is rejected rather than silently rounded. Numeric query thresholds must be finite and no greater than 100,000,000.
+
+Changing a query or beginning an inventory import clears old results and exports. Only the newest pending inventory load may replace the data. If an import fails, the prior inventory remains loaded with an explicit error, and the previous query must be rerun.
 
 Uploaded inventory stays in browser memory until the tab is closed or the demo is restored. No analytics, upload endpoint or paid service is used.
 

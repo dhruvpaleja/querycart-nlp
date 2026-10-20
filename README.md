@@ -1,5 +1,7 @@
 # QueryCart
 
+[Live app](https://querycart-dhruv.vercel.app/) · [GitHub](https://github.com/dhruvpaleja/querycart-nlp) · [Report (PDF)](docs/QueryCart_Mini_Project_Report.pdf) · [Presentation (PPTX)](docs/QueryCart_Presentation.pptx) · [Notebook](Querycart_Walkthrough.ipynb)
+
 An English query interface for a small inventory  
 NLP mini-project option · I081 Dhruv Paleja · I053 Manan Shah  
 Natural Language Processing 702AI0C009 · Dr Ami Munshi

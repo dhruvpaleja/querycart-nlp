@@ -1,0 +1,319 @@
+{
+  "type": "Original diagnostic fixture set, not arbitrary-language accuracy",
+  "count": 32,
+  "correct": 32,
+  "supportedCount": 20,
+  "supportedExact": 20,
+  "rejectionCases": 12,
+  "correctRejections": 12,
+  "results": [
+    {
+      "q": "list all items",
+      "skus": 24,
+      "status": "executed",
+      "correct": true,
+      "actual": 24
+    },
+    {
+      "q": "show inventory",
+      "skus": 24,
+      "status": "executed",
+      "correct": true,
+      "actual": 24
+    },
+    {
+      "q": "show out of stock",
+      "ids": [
+        "EL005",
+        "ST004",
+        "GR004"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "EL005",
+        "ST004",
+        "GR004"
+      ]
+    },
+    {
+      "q": "find low stock items in Electronics",
+      "ids": [
+        "EL002",
+        "EL003",
+        "EL005",
+        "EL006"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "EL002",
+        "EL003",
+        "EL005",
+        "EL006"
+      ]
+    },
+    {
+      "q": "show products in Home",
+      "skus": 6,
+      "status": "executed",
+      "correct": true,
+      "actual": 6
+    },
+    {
+      "q": "count products in Groceries",
+      "value": 6,
+      "status": "executed",
+      "correct": true,
+      "actual": 6
+    },
+    {
+      "q": "How many products are there?",
+      "value": 24,
+      "status": "executed",
+      "correct": true,
+      "actual": 24
+    },
+    {
+      "q": "total stock",
+      "value": 288,
+      "status": "executed",
+      "correct": true,
+      "actual": 288
+    },
+    {
+      "q": "top 1 most expensive products",
+      "ids": [
+        "EL003"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "EL003"
+      ]
+    },
+    {
+      "q": "top 2 cheapest products",
+      "ids": [
+        "ST004",
+        "ST001"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "ST004",
+        "ST001"
+      ]
+    },
+    {
+      "q": "top 2 highest stock items",
+      "ids": [
+        "ST001",
+        "GR005"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "ST001",
+        "GR005"
+      ]
+    },
+    {
+      "q": "find products containing coffee",
+      "ids": [
+        "HO002",
+        "GR001"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "HO002",
+        "GR001"
+      ]
+    },
+    {
+      "q": "show products where price equal to 249",
+      "ids": [
+        "ST006",
+        "HO006",
+        "GR004"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "ST006",
+        "HO006",
+        "GR004"
+      ]
+    },
+    {
+      "q": "show products stock below 1",
+      "ids": [
+        "EL005",
+        "ST004",
+        "GR004"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "EL005",
+        "ST004",
+        "GR004"
+      ]
+    },
+    {
+      "q": "show Stationery below 100",
+      "ids": [
+        "ST001",
+        "ST002",
+        "ST004"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "ST001",
+        "ST002",
+        "ST004"
+      ]
+    },
+    {
+      "q": "show products between 1499 and 1499",
+      "ids": [
+        "EL003"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "EL003"
+      ]
+    },
+    {
+      "q": "show products with price above 2000",
+      "ids": [],
+      "status": "executed",
+      "correct": true,
+      "actual": []
+    },
+    {
+      "q": "show products with stock at least 30",
+      "ids": [
+        "ST001",
+        "GR005"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "ST001",
+        "GR005"
+      ]
+    },
+    {
+      "q": "show products with price at most 79",
+      "ids": [
+        "ST001",
+        "ST004"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "ST001",
+        "ST004"
+      ]
+    },
+    {
+      "q": "show Home above 1000",
+      "ids": [
+        "HO004"
+      ],
+      "status": "executed",
+      "correct": true,
+      "actual": [
+        "HO004"
+      ]
+    },
+    {
+      "q": "show products sold yesterday",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    },
+    {
+      "q": "forecast next month sales",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    },
+    {
+      "q": "delete low stock items",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    },
+    {
+      "q": "show products under 100 and over 500",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "Unknown category “products under 100 and”. Available: Electronics, Stationery, Home, Groceries."
+    },
+    {
+      "q": "show low stock or expensive products",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    },
+    {
+      "q": "which supplier should I buy from",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    },
+    {
+      "q": "top 101 cheapest products",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "Top N must be between 1 and 100."
+    },
+    {
+      "q": "show products in Pharmaceuticals",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "Unknown category “pharmaceuticals”. Available: Electronics, Stationery, Home, Groceries."
+    },
+    {
+      "q": "average profit by category",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    },
+    {
+      "q": "show products between 500 and 100",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "Minimum price must not exceed maximum."
+    },
+    {
+      "q": "Anything running out?",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    },
+    {
+      "q": "What costs the least?",
+      "reject": true,
+      "status": "rejected",
+      "correct": true,
+      "reason": "This question is outside the supported grammar. Try a question below, then change its category or number. Nothing was executed."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+sku,name,category,stock,reorder_level,price
+EL001,USB C charging cable,Electronics,18,10,299
+EL002,Wireless mouse,Electronics,7,10,649
+EL003,Bluetooth speaker,Electronics,4,5,1499
+EL004,Laptop stand,Electronics,11,5,999
+EL005,Power bank,Electronics,0,8,1299
+EL006,Keyboard,Electronics,6,6,899
+ST001,A5 ruled notebook,Stationery,45,20,79
+ST002,Blue ballpoint pen pack,Stationery,12,15,99
+ST003,Desk organiser,Stationery,8,5,349
+ST004,Sticky notes,Stationery,0,10,59
+ST005,Whiteboard marker set,Stationery,14,10,189
+ST006,Sketch pencil set,Stationery,6,8,249
+HO001,Steel water bottle,Home,21,10,449
+HO002,Ceramic coffee mug,Home,9,10,199
+HO003,Storage box,Home,16,8,299
+HO004,LED desk lamp,Home,3,5,1199
+HO005,Cotton towel,Home,25,10,299
+HO006,Kitchen timer,Home,5,5,249
+GR001,Arabica coffee 250g,Groceries,15,10,399
+GR002,Green tea 25 bags,Groceries,4,8,149
+GR003,Rolled oats 500g,Groceries,22,10,129
+GR004,Almonds 200g,Groceries,0,5,249
+GR005,Dark chocolate 100g,Groceries,30,12,179
+GR006,Peanut butter 350g,Groceries,7,10,219
